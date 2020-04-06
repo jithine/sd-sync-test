@@ -1,0 +1,97 @@
+shared:
+    image: node:12
+    steps:
+      - job: echo "hello $SD_JOB_NAME"
+jobs:
+    main:
+        requires: [~pr, ~commit]
+    hr-1:
+        annotations:
+            screwdriver.cd/buildPeriodically: "H(20-20) * * * *"
+    hr-2:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-3:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(30-45) * * * *"
+    hr-4:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-5:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-6:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-7:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-8:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-9:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-10:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-11:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-12:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-13:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-14:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-15:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-16:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-17:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-18:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-19:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-20:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-21:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-22:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-23:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-24:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-25:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-26:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-27:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-28:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-29:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
+    hr-30:
+        annotations:         
+            screwdriver.cd/buildPeriodically: "H(50-55) * * * *"
