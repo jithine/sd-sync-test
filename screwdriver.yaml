@@ -4,7 +4,8 @@ shared:
         screwdriver.cd/ram: 16
         screwdriver.cd/disk: HIGH
         screwdriver.cd/timeout: 120
-    image: node:12
+    #image: node:12
+    image: openjdk:8
     steps:
       - job: echo "hello $SD_JOB_NAME"
 jobs:
