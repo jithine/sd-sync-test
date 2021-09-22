@@ -1,6 +1,3 @@
-subscribe:
-   scmUrls:
-        - git@github.com:screwdriver-cd/ui.git: ['~pr']
 shared:
     annotations:
         screwdriver.cd/cpu: 8
@@ -12,4 +9,4 @@ shared:
       - job: echo "hello $SD_JOB_NAME"
 jobs:
     main:
-        requires: [~pr, ~commit, ~subscribe]
+        requires: [~pr, ~commit]
