@@ -1,11 +1,13 @@
+subscribe:
+   scmUrls:
+        - git@github.com:screwdriver-cd/ui.git: ['~pr']
 shared:
     annotations:
         screwdriver.cd/cpu: 8
         screwdriver.cd/ram: 16
         screwdriver.cd/disk: HIGH
         screwdriver.cd/timeout: 120
-    #image: node:12
-    image: openjdk:8
+    image: node:14
     steps:
       - job: echo "hello $SD_JOB_NAME"
 jobs:
