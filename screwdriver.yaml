@@ -12,4 +12,4 @@ shared:
       - job: echo "hello $SD_JOB_NAME"
 jobs:
     main:
-        requires: [~pr, ~commit]
+        requires: [~pr, ~commit, ~subscribe]
